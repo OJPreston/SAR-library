@@ -34,3 +34,13 @@ tidy_reviews <-
   tidy_reviews %>% 
   mutate(value = str_replace(value, '^Yes$', '1'),
          value = str_replace(value, '^No$', '0'))
+
+
+
+
+# Explore -----------------------------------------------------------------
+
+tidy_reviews %>% 
+  filter(str_detect(question, '^Q30.') | str_detect(question, '^Q31.')) %>% 
+  filter(value == 1)
+  
