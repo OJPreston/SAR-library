@@ -2,8 +2,6 @@
 # Prepare workspace
 ####################################################
 
-# changes
-
 library(tidyverse)
 library(readxl)
 
